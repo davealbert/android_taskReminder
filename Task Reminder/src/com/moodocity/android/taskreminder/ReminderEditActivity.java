@@ -8,5 +8,11 @@ public class ReminderEditActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.reminder_edit);
+
+		if (getIntent() != null) {
+			Bundle extras = getIntent().getExtras();
+			int rowId = extras != null ? extras.getInt("RowId") : -1;
+			// Do stuff with the row id here
+		}
 	}
 }
