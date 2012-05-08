@@ -41,6 +41,8 @@ public class ReminderListActivity extends ListActivity {
 	public void onCreateContextMenu(ContextMenu menu, View v,
 			ContextMenuInfo menuInfo) {
 		super.onCreateContextMenu(menu, v, menuInfo);
+		MenuInflater mi = getMenuInflater();
+		mi.inflate(R.menu.list_menu_item_longpress, menu);
 	}
 
 	@Override
@@ -61,9 +63,18 @@ public class ReminderListActivity extends ListActivity {
 		return super.onMenuItemSelected(featureId, item);
 	}
 
+	private static final int ACTIVITY_CREATE = 0;
+
 	private void createReminder() {
-		// TODO Auto-generated method stub
-		
+		Intent i = new Intent(this, ReminderEditActivity.class);
+		startActivityForResult(i, ACTIVITY_CREATE);
+	}
+
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode,
+			Intent intent) {
+		super.onActivityResult(requestCode, resultCode, intent);
+		// TODO: Reload the list here
 	}
 
 }

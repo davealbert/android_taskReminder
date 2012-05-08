@@ -10,5 +10,6 @@
     <string name="time">Time</string>
     <string name="confirm">Confirm</string>
     <string name="menu_insert">Add reminder</string>
+    <string name="menu_delete">Delete reminder</string>
 
 </resources>
