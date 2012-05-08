@@ -3,5 +3,6 @@
 
     <string name="hello">Hello World, ReminderListActivity!</string>
     <string name="app_name">Task Reminder</string>
+    <string name="no_reminders">No Reminders</string>
 
 </resources>
