@@ -9,5 +9,6 @@
     <string name="date">Date</string>
     <string name="time">Time</string>
     <string name="confirm">Confirm</string>
+    <string name="menu_insert">Add reminder</string>
 
 </resources>
