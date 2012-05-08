@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -48,4 +50,20 @@ public class ReminderListActivity extends ListActivity {
 		mi.inflate(R.menu.list_menu, menu);
 		return true;
 	}
+
+	@Override
+	public boolean onMenuItemSelected(int featureId, MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.menu_insert:
+			createReminder();
+			return true;
+		}
+		return super.onMenuItemSelected(featureId, item);
+	}
+
+	private void createReminder() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
