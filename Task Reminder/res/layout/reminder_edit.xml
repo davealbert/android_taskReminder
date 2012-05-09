@@ -16,7 +16,9 @@
         <EditText
             android:id="@+id/title"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="@string/title"
+            android:inputType="text" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -26,10 +28,12 @@
         <EditText
             android:id="@+id/body"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
-            android:minLines="5"
-            android:scrollbars="vertical"
-            android:gravity=”top” />
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="@string/body"
+            android:inputType="text"
+            android:lines="5"
+            android:scrollbars="vertical" />
 
         <TextView
             android:layout_width="wrap_content"

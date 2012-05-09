@@ -77,4 +77,12 @@ public class ReminderListActivity extends ListActivity {
 		// TODO: Reload the list here
 	}
 
+	@Override
+	public boolean onContextItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.menu_delete:
+			// Delete the task return true;
+		}
+		return super.onContextItemSelected(item);
+	}
 }
