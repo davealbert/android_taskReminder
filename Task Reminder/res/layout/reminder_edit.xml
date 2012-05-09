@@ -27,12 +27,12 @@
 
         <EditText
             android:id="@+id/body"
+            android:lines="5"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="top"
-            android:hint="@string/body"
+            android:hint="@string/body"            
             android:inputType="text"
-            android:lines="5"
             android:scrollbars="vertical" />
 
         <TextView
