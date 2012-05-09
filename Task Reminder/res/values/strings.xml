@@ -11,5 +11,6 @@
     <string name="confirm">Confirm</string>
     <string name="menu_insert">Add reminder</string>
     <string name="menu_delete">Delete reminder</string>
+    <string name="task_saved_message">task_saved_message</string>
 
 </resources>
